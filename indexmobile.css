@@ -1,0 +1,301 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,500&display=swap'); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+/* body{
+    background-color: #dee1e2;
+    min-height: 100vh;
+    overflow-x:hidden;
+} */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+}
+.logo{
+    color:#333;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.group{
+   display: flex;
+    align-items: center;
+}
+
+header ul{
+   
+    display: grid;
+    gap:20px;
+    background:white;
+    color:black;
+}
+header ul li{
+   list-style: none;
+}
+header ul li a{
+   
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    
+    
+}
+header ul li a:before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transition: transform .5s ease-in-out;
+    -webkit-transition: transform .5s ease-in-out;
+    -moz-transition: transform .5s ease-in-out;
+    -ms-transition: transform .5s ease-in-out;
+    -o-transition: transform .5s ease-in-out;
+    transform-origin: right;
+}
+header ul li a:hover::before{
+    transform: scaleX(1);
+    -webkit-transform:scaleX(1);
+    -moz-transform:scaleX(1);
+    -ms-transform:scaleX(1);
+    -o-transform:scaleX(1);
+    transform-origin:left ;
+}
+header .search{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    z-index: 10;
+    cursor: pointer;
+}
+.searchBox{
+    position: absolute;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #fff;
+    align-items: center;
+    padding: 0 30px;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+.searchBox.active{
+    right: 0;
+}
+.searchBox input{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 50px;
+    color: #333;
+    font-size: 1.25em;
+    background: #fff;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+#searchBtn{
+    
+    left: 30px;
+    top: 2.5px;
+    color: rgb(101, 186, 158);
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+#searchBtn.active{
+    left: 0;
+}
+#closeBtn{
+    opacity: 0;
+    visibility: hidden;
+    color: rgb(101, 186, 158);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    scale: 0;
+}
+#closeBtn.active{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    scale: 1;
+}
+.menuToggle{
+    
+    display: none;
+}
+
+/* media queries */
+.b1{
+    padding: 0px 20px 0px 20px;
+}
+@media (max-width: 480px) {
+    header.open .navigation{
+        
+        margin-left:42px  !important;
+}
+    
+  }
+
+  @media (max-width: 768px) {
+    
+  }
+@media (max-width: 800px){
+    #searchBtn{
+        left:0;
+    }
+    .menuToggle{
+        position: absolute;
+        display: block;
+        font-size: 1em;
+        cursor: pointer;
+        transform: translateX(30px);
+        -webkit-transform: translateX(30px);
+        -moz-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+        -o-transform: translateX(30px);
+        z-index: 10;
+        color: #286dc0;
+        margin-left:-50px;
+        
+}
+/* @media (max-width: 480px) {
+  
+
+ion-icon.menuToggle.md.hydrated {
+    margin-left: -40px;
+}  
+} */
+    header .navigation{
+        position:absolute;
+        opacity: 0;
+        visibility: hidden;
+        left: 100%;
+    }
+    header.open .navigation{
+        top: 80px;
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #286dc0eb !important;
+        width: 88%;
+        height: calc(100vh - 80px);
+        padding: 20px 20px 0px 20px;
+        text-align: left;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        transition:1s;
+        -webkit-transition:1s;
+        -moz-transition:1s;
+        -ms-transition:1s;
+        -o-transition:1s;
+        margin-left:92px ;
+}
+
+    header.open .navigation li a{
+        font-size: 17px;
+        color: #ffffff; 
+        text-decoration: none;
+    }
+    header.open .navigation li a:hover{
+        color:#debc69 !important;
+        text-decoration: none;
+    }
+    .hide{
+        display: none;
+    }
+}
+ion-icon#searchBtn {
+    display: none;
+}
+span.icon {
+    display: none;
+}
+.icon-inner, .ionicon{
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #286dc0 !important;
+}
+
+
+.desktop1 {
+          display: none;
+        }
+     @media (max-width: 480px) {
+        .desktop1 {
+          display: block !important; 
+        }
+      }
+      @media (max-width: 768px) {
+        .desktop1 {
+          display: block !important;
+        }
+      }
+
+     
+
+
+.v1{
+    color:rgb(255, 255, 255) !important;
+    
+}
+.v1:hover{
+    color:#debc69 !important;
+}
+
+/* Make the dropdown animate. */
+.dropdown-content {
+  min-width: fit-content;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s;
+  
+  
+}
+a{
+    text-decoration: none;
+}
+/* The max-height should be set to something that will always be a little bit bigger than the height of the content. */
+.dropdown:hover .dropdown-content,
+.dropdown:focus .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  max-height: 370px;
+  padding: 20px 0px 20px 0px;
+  
+}

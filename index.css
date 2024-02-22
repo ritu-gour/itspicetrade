@@ -1,0 +1,112 @@
+.cardwho{
+    background-color: #e8f7fe !important;
+  
+    padding: 20px 40px 40px 20px;
+    border-radius: 12px;
+    border: none !important;
+margin: 0px 0px 0px 0px;
+}
+.caption11 {
+    font-size: 20px !important;
+    margin: 20px 0px 9px 0px;
+    color:#1a2563;
+}
+.missiony1{
+font-size: 33px !important;
+font-weight: 700;
+color:#1a2563;
+margin: 10px 30px 20px 30px;
+}
+.img-fluid90{
+
+    margin: 0px 30px 0px 30px;
+    }
+.missiony{
+    font-size: 16px !important;
+    margin: 10px 90px 0px 30px;
+    }
+    
+    .grid-item90{
+height: 450px;
+      background-color: #f4faf8;  
+      padding: 20px 20px 20px 20px;
+      border-radius: 20px;
+    }
+    .student-life-section{
+        margin-top: 90px;
+        background-image: url(img/pattern.png);
+        background-size: cover;
+        background-position: center;
+        
+
+        padding: 10px 0px 10px 0px;
+    }
+    .img-fluid900{
+        width: 620px;
+        border-radius: 10px;
+        border: 6px solid #1a2563; 
+        margin: 40px 0px 0px 0px;
+    }
+    .whtchat{
+        width: 80px;
+       
+    }
+    .fonts1{
+        font-size: 20px;
+        font-weight: 600;
+        color: #1a2563;
+        
+        }
+        
+        .fonts2{
+           font-size: 16px; 
+           padding: 0px 50px 0px 0px;
+           color: rgb(0, 0, 0);
+        }
+
+        .card1{
+            margin: 0px 0px 10px 0px;
+            padding: 1px 20px 1px 20px;
+            border: none !important;
+           
+            background: linear-gradient(270deg, #FFF5EB 5.23%, rgba(255, 245, 235, 0.4) 96.3%)
+        }
+        .card2{
+            padding: 1px 20px 1px 20px;
+            border: none !important;
+            background: linear-gradient(270deg, #EBF8F8 3.57%, rgba(235, 248, 248, 0.4) 97.45%);
+            margin: 0px 0px 10px 0px;
+        }
+        .card3{
+            padding: 1px 20px 1px 20px;
+            border: none !important;
+            margin: 0px 0px 10px 0px;
+            background: linear-gradient(270deg, #FFF5EB 5.23%, rgba(255, 245, 235, 0.4) 96.3%)
+        }
+        .card1:hover{
+            padding: 1px 20px 1px 20px;
+            border: none !important;
+            margin: 0px 0px 10px 0px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            background:#ee6430;
+        }
+        .card2:hover{
+            padding: 1px 20px 1px 20px;
+            border: none !important;
+            margin: 0px 0px 10px 0px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            background:#ee6430;
+            /* background-color: #ee6430; */
+        }
+        .card3:hover{
+            padding: 1px 20px 1px 20px;
+            border: none !important;
+            margin: 0px 0px 10px 0px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            background:#ee6430;
+        }
+
+/*--------
+dark #1a2563
+or: #ee6430
+------*/
